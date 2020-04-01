@@ -1,0 +1,13 @@
+h1 {
+    color : black
+}
+
+body {
+    background-color: white;
+    color: black
+}
+
+.dark-mode {
+    background-color: black;
+    color: white; 
+}
