@@ -8,15 +8,57 @@
     <link href="style.css" rel = "stylesheet" type = "text/css">
 </head>
 <body>
-    <h2>Hi - I'm Mohamed</h2>
-    <p>I'm a product manager in the civil service with a plan to become a founder and coder &#129310;&#127998;</p>
+    <div>
+      <header>  
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <h1> Hi &#128075;&#127998;</h1>
+        <h2>I'm Mohamed</h2>
+      </header>  
+      <div>
+            <button onclick="myDarkMode()">Dark mode</button>
+            <script>
+                function myDarkMode() {
+                    let element = document.body;
+                    element.classList.toggle("dark-mode")
+                }
+            </script>
+        </div>  
+    </div>
+    <section>
+        <h3><img src="/Headshot.jpg" class="profile-image"></h3>
+        <p>I'm a product manager in the civil service with a plan to become a founder and coder &#129310;&#127998;</p>
+        <p>Being a coder is super empowering. I would be able to independently execute on some of those startup ideas in my head. 
+            I’d also use those skills to support others with a similar background to me. 
+            I have recently co-founded a community called Somalis in Tech aimed at increasing engagement in tech for an underrepresented group.
+            As part of our roadmap we hope to host hackathons aimed at developing products and services that would benefit the Somali community in the UK so being able to code would kind of be useful :). 
+        </p>
+    </section>
 
-    <button onclick="myDarkMode()">Dark mode</button>
-    <script>
-        function myDarkMode() {
-            let element = document.body;
-            element.classList.toggle("dark-mode")
-        }
-    </script>
+<body>
+        <div class="carousel-container"> 
+            <div class="carousel-slide">
+                <img src="/img3.jpg" id="lastClone" alt="">
+                <img src="/img1.jpg" alt="">
+                <img src="/img2.jpg" alt="">
+                <img src="/img3.jpg" alt="">
+                <img src="/img1.jpg" id="firstClone" alt="">
+            </div>
+        </div>
+
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button> 
+
+        <script src="app.js"></script>
+</body>
+    <div>
+        <footer>
+            Made with &#10084;&#65039; by Mohamed 
+        </footer>
+    </div>
+
 </body>
 </html>
