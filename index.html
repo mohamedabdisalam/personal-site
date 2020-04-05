@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mohamed Abdisalam</title>
     <link href="style.css" rel = "stylesheet" type = "text/css">
+    <script src="https://kit.fontawesome.com/b5f52b5711.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div>
@@ -14,12 +15,12 @@
             <a href="/index.html">Home</a>
             <a href="/about.html">About</a>
             <a href="/contact.html">Contact</a>
+            <button onclick="myDarkMode()"><i class="fas fa-adjust" id="darkBtn"></i></button>   
         </nav>
         <h1> Hi &#128075;&#127998;</h1>
         <h2>I'm Mohamed</h2>
       </header>  
       <div>
-            <button onclick="myDarkMode()">Dark mode</button>
             <script>
                 function myDarkMode() {
                     let element = document.body;
@@ -40,6 +41,8 @@
 
 <body>
         <div class="carousel-container"> 
+            <i class="fas fa-arrow-left" id="prevBtn"></i>
+            <i class="fas fa-arrow-right" id="nextBtn"></i>
             <div class="carousel-slide">
                 <img src="/img3.jpg" id="lastClone" alt="">
                 <img src="/img1.jpg" alt="">
@@ -48,9 +51,6 @@
                 <img src="/img1.jpg" id="firstClone" alt="">
             </div>
         </div>
-
-        <button id="prevBtn">Prev</button>
-        <button id="nextBtn">Next</button> 
 
         <script src="app.js"></script>
 </body>

@@ -1,7 +1,3 @@
-h1 {
-    color : black
-}
-
 body {
     font-family: sans-serif;
     background-color: white;
@@ -19,9 +15,11 @@ body {
 }
 
 .carousel-container {
-    width: 60%;
+    width: 36%;
     margin: auto;
     border: 5px solid black;
+    overflow: hidden;
+    position: relative;
 }
 
 .carousel-slide {
@@ -39,4 +37,26 @@ header nav {
     width: 200px;
     height: 200px;
     border-radius: 4px;
+}
+
+#prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
 }
