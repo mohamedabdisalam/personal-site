@@ -1,3 +1,10 @@
+//Dark mode
+function myDarkMode() {
+    let element = document.body;
+    element.classList.toggle("dark-mode")
+}
+
+//Carousel
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
 
