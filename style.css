@@ -55,7 +55,7 @@ nav {
     align-items: center;
 }
 
-.introduction {
+.introduction, .why {
     flex: 1;
 }
 .intro-text h1{
@@ -66,16 +66,68 @@ nav {
     -webkit-text-fill-color: transparent;
 }
 
+.intro-text p{
+    margin: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;height: 60vh;
+}
+
 .cover img{
-    height: 60vh;
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
     border-radius: 50px;
 }
 
+.about {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 40vh;
+    align-items: center;
+}
 
+.why-text h2{
+        font-size: 33px;
+        font-weight: 500;
+        background: linear-gradient(to right, #494964, #6f6f89);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
 
+.why-text p{
+        margin: 5px;
+        font-size: 20px;
+        color: #585772;
+}
 
-section {
-    justify-content: center;
+@media screen and (max-width: 1024px) {
+    .presentation, .about {
+        flex-direction: column;
+    }
+    .introduction, .why, .carousel {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 25px;
+    }
+    .intro-text p{
+        font-size: 18px;
+    }
+    .why-text h2{
+        font-size: 20px;
+    }
+    .why-text p{
+        font-size: 15px;
+    }
+    .cover img{
+        height: 80%;
+    }
 }
 
 .socialIcons {
@@ -92,23 +144,7 @@ section {
     box-shadow: 5px 10px 10px 0;
 }
 
-.center {
-    text-align: center;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    justify-items: center;
-    justify-self: center;
-    justify-content: center;
-    place-items: center;
-    vertical-align: middle;
-    line-height: 100%;
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%)
-}
+
 
 .dark-mode {
     background-color: black;
@@ -127,12 +163,6 @@ section {
     display: flex;
     width: 100%;
     height: 500px;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 4px;
 }
 
 #prevBtn {
