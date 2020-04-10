@@ -1,17 +1,78 @@
-nav {
-    position: sticky;
-    top: 0;
-    float: right;
-    margin-right: 10px;
-    margin-top: 5px;
+*{
+    padding: 0px;
+    margin: 0px;  
+    box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: white;
     color: black
 }
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container, .nav-links, .darker-mode{
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+nav {
+    flex: 2;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+.darker-mode {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cover img{
+    height: 60vh;
+    border-radius: 50px;
+}
+
+
+
 
 section {
     justify-content: center;
@@ -53,11 +114,6 @@ section {
     background-color: black;
     color: white; 
 }
-*{
-    padding: 0px;
-    margin: 0px;  
-    box-sizing: border-box;
-}
 
 .carousel-container {
     width: 36%;
@@ -86,7 +142,6 @@ section {
     left: 5%;
     font-size: 30px;
     color: white;
-    opacity: 0.7;
     cursor: pointer;
 }
 
@@ -97,7 +152,6 @@ section {
     right: 5%;
     font-size: 30px;
     color: white;
-    opacity: 0.7;
     cursor: pointer;
 }
 

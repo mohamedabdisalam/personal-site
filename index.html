@@ -5,27 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mohamed Abdisalam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
     <link href="style.css" rel = "stylesheet" type = "text/css">
-    <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/b5f52b5711.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-      <header>  
+      <header> 
+          <div class="logo-container">
+              <h3>&#128075;&#127998;</h3>
+              <h4 class="logo">Hi</h4>
+          </div> 
         <nav>
-            <a href="/index.html">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            <button onclick="myDarkMode()"><i class="fas fa-adjust" id="darkBtn"></i></button>   
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Say hi</a></li>
+            </ul>
         </nav>
-        <h1> Hi &#128075;&#127998;</h1>
+        <div class="darker-mode">
+            <button onclick="myDarkMode()"><i class="fas fa-adjust" id="darkBtn"></i></button>   
+        </div>
       </header>  
-    </div>
-    <section>
-        <h2>I'm Mohamed</h2>
-        <h3><img src="/Headshot.jpg" class="profile-image"></h3>
+
+      <main>
+            <section class="presentation">
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h1>I'm Mohamed</h1>
+                        <p>I'm a product manager in the civil service with a plan
+                            to become a founder and coder &#129310;&#127998;
+                        </p>
+                    </div>
+                </div>
+                <div class="cover">
+                    <img src="/Headshot.jpg" alt="headshot"/>
+                </div>
+            </section>
+      </main> 
+        <h3></h3>
         <h3>A bit about me</h3>
-        <p>I'm a product manager in the civil service with a plan to become a founder and coder &#129310;&#127998;</p>
+        
         <h3>Why do I want to become a founder and coder?</h3>
         <p>Being a coder is super empowering. I would be able to independently execute on some of those startup ideas in my head. 
             I’d also use those skills to support others with a similar background to me. 
@@ -44,6 +63,8 @@
                 <img src="/img1.jpg" id="firstClone" alt="">
             </div>
         </div>
+
+        <script src="app.js"></script>
     <div class="footer">
         <div class="SocialIcons">
             <a href="https://github.com/mohamedabdisalam" rel="me" target="_blank">
