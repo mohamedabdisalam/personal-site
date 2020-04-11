@@ -173,9 +173,9 @@ nav {
 }
 
 .carousel-container {
-    width: 36%;
+    width: 45%;
     margin: auto;
-    border: 5px solid black;
+    border: 4px solid black;
     overflow: hidden;
     position: relative;
 }
