@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mohamed Abdisalam</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="style.css" rel = "stylesheet" type = "text/css">
     <script src="https://kit.fontawesome.com/b5f52b5711.js" crossorigin="anonymous"></script>
 </head>
 <body>
-      <header> 
+      <a name="home-page"></a> 
+      <header>
           <div class="logo-container">
-              <h3>&#128075;&#127998;</h3>
-              <h4 class="logo">Hi</h4>
+            <h3 class="logo">Hi &#128075;&#127998;</h3>
           </div> 
         <nav>
             <ul class="nav-links">
-                <li><a class="nav-link" href="#">Home</a></li>
-                <li><a class="nav-link" href="#">About</a></li>
-                <li><a class="nav-link" href="#">Say hi</a></li>
+                <li><a class="nav-link" href="#home-page">Home</a></li>
+                <li><a class="nav-link" href="#why-FAC">Why FAC</a></li>
+                <li><a class="nav-link" href="#say-hi">Say hi</a></li>
             </ul>
+            <div class="darker-mode">
+                <button onclick="myDarkMode()"><i class="fas fa-adjust" id="darkBtn"></i></button>   
+            </div>
         </nav>
-        <div class="darker-mode">
-            <button onclick="myDarkMode()"><i class="fas fa-adjust" id="darkBtn"></i></button>   
-        </div>
       </header>  
 
       <main>
@@ -44,6 +44,7 @@
       </main> 
             <section class="about">
                 <div class="why">
+                    <a name="why-FAC"></a>
                     <div class="why-text">
                         <h2>Why become a founder and coder?</h2>
                         <p>Being a coder is super empowering. I would be able to independently execute 
@@ -51,7 +52,7 @@
                             others with a similar background to me. I have recently co-founded a community
                             called Somalis in Tech aimed at increasing engagement in tech for an underrepresented group.
                             As part of our roadmap we hope to host hackathons aimed at developing products and
-                            services that would benefit the Somali community in the UK so being able to code would kind of be useful :). 
+                            services that would benefit the Somali community in the UK so being able to code would kind of be useful. 
                         </p>
                     </div>
                 </div>
@@ -69,28 +70,33 @@
                     </div>
                 </div>
                 <script src="app.js"></script>
+            </section> 
+            <section class="footer">
+                <a name="say-hi"></a>
+                <div class="social-media">
+                    <a class="social-link" href="https://github.com/mohamedabdisalam" rel="me" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-link" href="https://twitter.com/moeabdisalam" rel="me" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-link" href="https://www.linkedin.com/in/mohamedabdisalam/" rel="me" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="social-link" href="https://www.freecodecamp.org/mohamedabdisalam" rel="me" target="_blank">
+                        <i class="fab fa-free-code-camp"></i>
+                    </a>
+                    <a class="social-link" href="https://www.codewars.com/users/mohamedabdisalam" rel="me" target="_blank">
+                        <img src="/codewars.png" alt="codewars"/> 
+                    </a>
+                </div>
             </section>
-
-        
-    <div class="footer">
-        <div class="SocialIcons">
-            <a href="https://github.com/mohamedabdisalam" rel="me" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://twitter.com/moeabdisalam" rel="me" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mohamedabdisalam/" rel="me" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://www.freecodecamp.org/mohamedabdisalam" rel="me" target="_blank">
-                <i class="fab fa-free-code-camp"></i>
-            </a>
-        </div
-        <p> 
-            <sub style="opacity: 0.5;">Made with &#10084;&#65039; by Mohamed</sub>
-        </p>
-    </div>
-
+                    <div class="madeBy">
+                        <p> 
+                            <sub style="opacity: 0.8;">Made with &#10084;&#65039; by Mohamed</sub>
+                        </p>
+                    </div>
+                </div
+            </section>
 </body>
 </html>

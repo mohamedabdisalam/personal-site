@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background-color: white;
-    color: black
+    color: #5f5f79;
 }
 
 header {
@@ -19,11 +19,12 @@ header {
     align-items: center;
 }
 
-.logo-container, .nav-links, .darker-mode{
+.logo-container, .darker-mode, .social-media{
     display: flex;
 }
 
 .logo-container {
+    font-size: 30px;
     flex: 1;
 }
 .logo {
@@ -31,17 +32,26 @@ header {
     margin: 5px;
 }
 nav {
-    flex: 2;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
+
 .nav-links {
-    justify-content: space-around;
+    flex: 6;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
+    justify-content: space-around;
 }
+
 .nav-link {
     color: #5f5f79;
     font-size: 18px;
     text-decoration: none;
+    letter-spacing: 2px;
 }
+
 .darker-mode {
     flex: 1;
     justify-content: flex-end;
@@ -61,7 +71,7 @@ nav {
 .intro-text h1{
     font-size: 44px;
     font-weight: 500;
-    background: linear-gradient(to right, #494964, #6f6f89);
+    background: linear-gradient(to right, #585772, #585772);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -69,7 +79,6 @@ nav {
 .intro-text p{
     margin: 5px;
     font-size: 22px;
-    color: #585772;
 }
 .cover {
     flex: 1;
@@ -94,7 +103,7 @@ nav {
 .why-text h2{
         font-size: 33px;
         font-weight: 500;
-        background: linear-gradient(to right, #494964, #6f6f89);
+        background: linear-gradient(to right, #585772, #585772);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
@@ -102,7 +111,34 @@ nav {
 .why-text p{
         margin: 5px;
         font-size: 20px;
-        color: #585772;
+}
+
+.footer {
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    margin: auto;
+    align-items: center;
+}
+
+.social-media {
+    flex: 1;
+    display: block;
+}
+
+.social-link {
+    color: #5f5f79;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.madeBy {
+    margin-bottom: 25px;
+}
+
+#darkBtn {
+    color: #5f5f79;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -130,25 +166,10 @@ nav {
     }
 }
 
-.socialIcons {
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer {
-    position: relative;
-    box-shadow: 5px 10px 10px 0;
-}
-
-
 
 .dark-mode {
-    background-color: black;
-    color: white; 
+    background-color:black;
+    color: whitesmoke;
 }
 
 .carousel-container {
